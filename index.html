@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=display-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="intro">
+        <img class="profile-picture" alt="" src="img/profile-picture.jpg" />
+        <h1>Luís Ribeiro</h1>
+        <h3>Learning Full Stack Web Development @ CF</h3>
+        <p id="quote">{{ pause and relax }}</p>
+      </div>
+
+      <hr />
+
+      <div class="about-grid">
+        <div class="i-am">
+          <h3>I am</h3>
+          <ul class="about-list">
+            <li>Curious</li>
+            <li>Meticulous</li>
+            <li>Motivated</li>
+          </ul>
+        </div>
+
+        <div class="i-like">
+          <h3>I like</h3>
+          <ul class="about-list">
+            <li>Videogames</li>
+            <li>Music</li>
+            <li>Bartending</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      <div>
+        <h3 class="projects-heading">My Projects</h3>
+        <div class="projects-grid">
+          <div class="project-image-wrapper">
+            <h4>To-Do List</h4>
+            <a
+              href="https://luiscpribeiro.github.io/to-do-list-app/"
+              target="_blank"
+              title="To-Do List"
+              ><img class="project-image" alt="" src="img/to-do-list.png"
+            /></a>
+          </div>
+          <div class="project-image-wrapper">
+            <h4>Pokédex</h4>
+            <a
+              href="https://luiscpribeiro.github.io/pokemon-js-app/"
+              target="_blank"
+              title="Pokédex"
+              ><img class="project-image" alt="" src="img/pokedex.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="links-contact">
+        <div class="links">
+          <h4>You can find me on</h4>
+          <a
+            href="https://github.com/luiscpribeiro"
+            target="_blank"
+            title="Github"
+            ><img
+              class="social-media__icon"
+              src="img/github_icon.svg"
+              alt="Github Link"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/luiscpribeiro/"
+            target="_blank"
+            title="Linkedin"
+            ><img
+              class="social-media__icon"
+              src="img/linkedin_icon.svg"
+              alt="Linkedin Link"
+          /></a>
+          <br />
+          <a href="files/cv2022.pdf" target="_blank" download
+            ><button class="cv-button">Download my CV</button>
+          </a>
+          <form
+            action="mailto:lcrgambelas@gmail.com"
+            method="post"
+            enctype="multipart/form-data"
+            name="EmailForm"
+          >
+            <div class="submit-button-wrapper">
+              <input id="submit-button" type="submit" value="Email me" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

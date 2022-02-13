@@ -1,0 +1,155 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  background: #caebf2;
+  color: #002f3f;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto Mono", monospace;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.container > div {
+  margin: 20px auto;
+}
+
+/* Profile */
+
+.profile-picture {
+  border-radius: 5px;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
+  transition: all ease-in-out 0.2s;
+}
+
+.profile-picture:hover {
+  box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+}
+
+.intro {
+  text-align: center;
+}
+
+#quote {
+  font-style: italic;
+}
+
+/* Grid */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 480px) {
+  .about-me {
+    grid-template-columns: 100%;
+  }
+}
+
+/* Projects */
+
+.projects-heading {
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.project-image {
+  border-radius: 5px;
+  transition: all ease-in-out 0.2s;
+  width: 250px;
+}
+
+.project-image:hover {
+  filter: brightness(0.5);
+}
+
+.project-image-wrapper {
+  justify-self: center;
+  padding: 10px;
+  position: relative;
+}
+
+.project-image-wrapper:hover > h4 {
+  visibility: visible;
+}
+
+.project-image-wrapper > h4 {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  visibility: hidden;
+  z-index: 2;
+  transition: all ease-in-out 0.2s;
+}
+
+@media (max-width: 650px) {
+  .projects-grid {
+    grid-template-columns: 100%;
+  }
+}
+
+/* Contact */
+
+.links-contact {
+  text-align: center;
+}
+
+@keyframes social-spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.social-media__icon:hover {
+  filter: brightness(120%);
+  animation: 2s social-spin infinite running linear;
+}
+
+button,
+input[type="submit"] {
+  border: none;
+  font-family: inherit;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin: 10px 0;
+  width: 200px;
+}
