@@ -35,14 +35,13 @@ hr {
 
 .profile-picture {
   border-radius: 5px;
-  width: 150px;
-  height: 150px;
+  width: 200px;
   box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
   transition: all ease-in-out 0.2s;
 }
 
 .profile-picture:hover {
-  box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+  box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.5);
 }
 
 .intro {
@@ -146,10 +145,17 @@ input[type="submit"] {
   border: none;
   font-family: inherit;
   background-color: #fff;
+  color: #002f3f;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   cursor: pointer;
   margin: 10px 0;
   width: 200px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #002f3f;
+  color: #caebf2;
 }
